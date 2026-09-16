@@ -1,0 +1,13 @@
+¿Para qué se utilizan las listas en el sistema de control de inventario según el código?;Para almacenar múltiples productos sin requerir estructuras de repetición o control
+¿Qué estructura de datos de Python se utiliza para representar las propiedades de un producto individual?;El diccionario
+¿Qué claves de datos contiene el diccionario de cada producto en el sistema de inventario?;Nombre, Cantidad, Precio_unitario y Precio_total
+¿Qué función cumple el método .strip() al recibir la entrada de texto del usuario?;Elimina los espacios en blanco innecesarios al inicio y al final de la cadena
+¿Qué función cumple el método .title() al procesar el nombre de un producto?;Convierte la primera letra de cada palabra a mayúscula y las demás a minúscula para estandarizar la entrada
+¿Cómo se calcula automáticamente el precio total de un producto en el programa?;Multiplicando el precio unitario por la cantidad del producto (precio_unitario * cantidad_producto)
+¿Cómo se realiza la separación visual mediante impresión de caracteres repetidos en el código?;Multiplicando una cadena de texto por un número entero (por ejemplo: "*" * 40)
+¿Cómo se inicializa una lista vacía para el inventario en Python?;inventario = []
+¿Qué función se utiliza para convertir la entrada del usuario de cantidad a un número entero?;int()
+¿Qué función se utiliza para convertir la entrada del usuario de precio a un número de punto flotante?;float()
+¿Qué método de listas se utiliza para agregar un diccionario de producto a la lista inventario?;El método .append()
+¿Cómo se accede al nombre del primer producto dentro de la lista de inventario?;inventario[0]["Nombre"]
+¿Cómo se accede a la cantidad del segundo producto almacenado en la lista de inventario?;inventario[1]["Cantidad"]
