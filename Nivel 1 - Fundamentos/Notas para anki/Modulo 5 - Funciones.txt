@@ -1,0 +1,19 @@
+¿Que significa el acrónimo LEGB en el alcance de variables de Python?;Local, Enclosing, Global, Built-in
+¿Cual es el orden exacto en el que Python busca una variable según la regla LEGB?;Primero Local luego Enclosing luego Global y finalmente Built-in
+¿Que es el alcance Local (L) en Python?;El espacio de nombres interno de una función o expresión lambda que contiene sus variables locales y parámetros
+¿Que es el alcance Enclosing (E) o de cierre en Python?;El alcance de las funciones anidadas o padre que no es ni local ni global
+¿Que es el alcance Global (G) en Python?;El nivel superior de un modulo o script donde se definen variables accesibles en todo el archivo
+¿Que es el alcance Built-in (B) en Python?;El alcance predefinido que contiene palabras clave y funciones integradas como print, len o range
+¿Que ocurre si intentas modificar una variable global dentro de una función sin usar la palabra clave global?;Python crea una nueva variable local con el mismo nombre dentro de la función
+¿Cual es la función de la palabra clave global en Python?;Permite modificar el valor de una variable definida en el alcance global desde dentro de una función
+¿Cual es la sintaxis para declarar una variable global dentro de una función?;global nombre_de_variable
+¿Cual es la función de la palabra clave nonlocal en Python?;Permite modificar una variable del alcance de la función contenedora o padre desde una función anidada
+¿Cual es la restricción principal al utilizar la palabra clave nonlocal?;La variable debe existir previamente en una función contenedora y no puede ser global
+¿Que error lanza Python si intentas acceder a una variable local antes de asignarle un valor dentro de su alcance?;Un error de tipo UnboundLocalError
+¿Que es un docstring en Python?;Una cadena de texto literal que documenta un modulo, clase, método o función colocada como primera declaración
+¿Cual es la sintaxis estándar para escribir un docstring de una sola línea en Python?;Triple comilla dobles al inicio y al final en la misma línea
+¿Cual es la sintaxis estándar para un docstring multilinea según PEP 257?;Una línea de resumen seguida de una línea en blanco y una explicación detallada
+¿Como se accede programáticamente al docstring de una función llamada mi_funcion?;Mediante el atributo especial mi_funcion.__doc__
+¿Cual es la diferencia principal entre un comentario con numeral (#) y un docstring?;Los comentarios se ignoran en ejecución mientras que los docstrings se almacenan en el atributo __doc__
+¿Que función integrada de Python permite leer el docstring formateado de un objeto?;La función integrada help()
+¿Que convención PEP establece las directrices para el formato de docstrings en Python?;El documento PEP 257

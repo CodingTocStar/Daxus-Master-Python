@@ -1,0 +1,100 @@
+================================================================================
+RESUMEN DE ESTUDIO: PROGRAMACIÓN Y ESTRUCTURAS DE DATOS EN PYTHON (MÉTODO CORNELL)
+================================================================================
+
+1. NOTAS DE PISTA / CLAVES & CONTENIDO PRINCIPAL
+
+--- MÓDULO 3: TUPLAS Y OPERADOR * ---
+• Desempaquetado con *:
+  Al desempaquetar una tupla como `padre, *resto = (...)`, el primer elemento 
+  se asigna individualmente y el operador `*` empaqueta los elementos restantes 
+  dentro de una lista (`list`).
+
+• Variable de ignorar `_`:
+  Por convención, se utiliza el carácter guion bajo (`_`) para omitir o ignorar 
+  valores no requeridos. La variable almacenará el último valor asignado.
+
+--- MÓDULO 3: CONJUNTOS (SET) ---
+• Valores duplicados y tipos:
+  `True` es equivalente a `1` en valor y hash, por lo que `.add(True)` no modifica 
+  un conjunto que ya contiene el entero 1.
+
+• Inmutabilidad de elementos:
+  Intentar agregar elementos mutables (como listas) lanza `TypeError: unhashable type: 'list'`.
+
+• Sin indexación:
+  Los conjuntos carecen de orden, por lo que acceder por índice (`conjunto[3]`) 
+  genera un `TypeError`.
+
+• Métodos de eliminación:
+  - `remove()` lanza una excepción `KeyError` si el elemento no existe.
+  - `discard()` ignora la ausencia sin lanzar error.
+  - `pop()` remueve y devuelve un elemento arbitrario/no determinado.
+
+• Operaciones y evaluación:
+  - `union()` combina elementos únicos.
+  - `intersection()` conserva elementos comunes.
+  - `issubset()` e `issuperset()` evalúan relaciones de inclusión entre conjuntos.
+
+--- MÓDULO 3: ELIMINACIÓN Y EFICIENCIA ---
+• Sentencia `del`:
+  En listas elimina elementos por índice (`del lista[0]`); en tuplas y conjuntos 
+  solo permite eliminar la variable completa.
+
+• Eficiencia del operador `in`:
+  En `set` y `dict` tiene complejidad O(1) gracias a las tablas hash, superando 
+  el acceso lineal O(n) de las listas. Por defecto, `in` en diccionarios busca 
+  entre sus claves (keys).
+
+--- MÓDULO 3: PROYECTO INVENTARIO ---
+• Estructura:
+  Uso de listas de diccionarios para representar productos y sus propiedades 
+  (Nombre, Cantidad, Precio_unitario, Precio_total).
+
+• Formateo de entrada:
+  - `.strip()` remueve espacios extremos.
+  - `.title()` estandariza mayúsculas/minúsculas.
+  - Conversión explícita mediante `int()` y `float()`.
+
+• Acceso:
+  Inserción con `.append()` y acceso anidado mediante `inventario[índice]["Clave"]`.
+
+--- MÓDULO 4: ESTRUCTURAS DE REPETICIÓN ---
+• List Comprehension:
+  Sintaxis concisa: `[expresion for elemento in iterable if condicion]` 
+  para generar listas en una sola línea.
+
+• Método `join()`:
+  Une iterables de cadenas mediante un delimitador: `delimitador.join(iterable)`.
+
+• Bucles `for` vs `while`:
+  - Use `for` para secuencias e iteraciones conocidas.
+  - Use `while` cuando la condición de parada depende de eventos dinámicos o entradas externas.
+
+• Control de flujo:
+  - `break` interrumpe y finaliza el bucle.
+  - `continue` salta directamente a la siguiente iteración.
+
+--- MÓDULO 5: FUNCIONES Y ALCANCE ---
+• Regla LEGB:
+  Orden de búsqueda de variables: Local -> Enclosing -> Global -> Built-in.
+
+• Modificadores de alcance:
+  - `global` permite modificar variables globales desde una función.
+  - `nonlocal` modifica variables de la función contenedora en funciones anidadas.
+
+• Errores:
+  Acceder a una variable local antes de asignarla lanza `UnboundLocalError`.
+
+• Docstrings:
+  Documentación encerrada en triple comilla doble ("""), accesible mediante 
+  `funcion.__doc__` o la función `help()` (siguiendo directrices PEP 257).
+
+================================================================================
+RESUMEN GENERAL (SUMMARY)
+================================================================================
+En este bloque de aprendizaje se han cubierto desde las estructuras de datos 
+fundamentales en Python y sus peculiaridades técnicas (eficiencia en tablas hash, 
+inmutabilidad de conjuntos y manipulación de listas y diccionarios) hasta el 
+control de flujo con bucles, list comprehensions estilizadas y la gestión de 
+ámbito y documentación de funciones mediante la regla LEGB y PEP 257.
