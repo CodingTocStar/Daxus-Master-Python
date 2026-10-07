@@ -1,0 +1,16 @@
+¿Cuál es la función del método .strip() en la captura de entradas?;Elimina espacios en blanco innecesarios al inicio y al final de la cadena de texto.
+¿Qué logra la combinación .title().strip() sobre un input()?;Estandariza el texto convirtiendo la primera letra de cada palabra a mayúscula y elimina espacios en blanco iniciales o finales.
+¿Qué es el principio de separación de responsabilidades en funciones?;Es el principio de diseño donde cada función realiza una tarea única y bien definida.
+¿Cómo se interrumpe un bucle 'for' inmediatamente al encontrar un elemento?;Utilizando la instrucción 'break'.
+¿Qué estructura de datos se utilizó en el proyecto para representar individualmente un producto?;Un diccionario con claves para nombre, cantidad, precio unitario y valor en stock.
+¿Cómo se calcula el valor total en stock de un producto?;Multiplicando la cantidad de productos por su precio unitario (cantidad * precio_unitario).
+¿Qué método de lista se utiliza para agregar un nuevo producto al inventario?;El método .append(nuevo_producto).
+¿Qué valor inicial se le asigna a una variable de referencia cuando se busca un objeto en una lista?;Se inicializa en 'None' (por ejemplo: producto_encontrado = None).
+¿Qué operador se utiliza para verificar si una variable de referencia no está vacía?;El operador 'is not None'.
+¿Qué sucede con los diccionarios dentro de una lista al modificar sus claves mediante una variable de referencia?;Dado que los diccionarios son mutables, los cambios modifican directamente el objeto en la lista.
+¿Qué método de listas se usa para eliminar un producto específico pasando el objeto como argumento?;El método .remove(objeto_a_eliminar).
+¿Cómo se convierte la entrada de tipo texto de input() a un número entero en Python?;Utilizando la función incorporada int(input()).
+¿Cómo se convierte la entrada de tipo texto de input() a un número flotante o decimal?;Utilizando la función incorporada float(input()).
+¿Qué condición mantiene en ejecución el bucle del menú principal en el proyecto?;La condición 'while opcion != 0:'.
+¿Para qué sirve documentar funciones mediante docstrings en Python?;Para proveer una explicación integrada sobre el propósito, parámetros y comportamiento de la función.
+¿Cuál es la forma recomendada de representar una lista general de registros en el proyecto?;Una lista de diccionarios, donde cada diccionario representa un registro individual.

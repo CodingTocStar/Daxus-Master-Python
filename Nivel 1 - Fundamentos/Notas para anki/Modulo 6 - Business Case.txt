@@ -1,0 +1,37 @@
+¿Qué es un Business Case?;Un documento o presentación que justifica la realización de un proyecto o inversión dentro de una organización.
+¿Cuál es el propósito principal de un Business Case?;Convencer a los tomadores de decisiones de que vale la pena invertir recursos en una propuesta.
+¿Cuáles son las 3 secciones clave de la estructura de un Business Case?;1. Resumen ejecutivo<br>2. Descripción del problema<br>3. Plan de implementación.
+¿Qué incluye el resumen ejecutivo de un Business Case?;Un resumen claro y breve del problema, la solución propuesta y los beneficios esperados.
+¿Qué incluye la sección de plan de implementación en un Business Case?;Las etapas del proyecto, el cronograma y los recursos necesarios.
+¿Cuáles son los 4 requerimientos funcionales del sistema de inventario?;Añadir productos, eliminar productos, consultar estado del inventario y exportar informe PDF.
+¿Qué datos debe registrar el sistema al añadir un producto?;Nombre, cantidad, precio unitario y valor de stock.
+¿Para qué sirve el requerimiento de eliminar productos en el inventario?;Para evitar ofrecer productos que ya no existen en la organización.
+¿Para qué sirve la consulta del estado actual del inventario?;Para medir la capacidad de oferta y determinar puntos de abastecimiento.
+¿Qué librerías de Python se utilizan para implementar la exportación del informe PDF?;fpdf2 (FPDF), PyPDF2 y io.
+¿Qué método de fpdf instancía la clase principal para crear un documento PDF?;<code>pdf = FPDF()</code>
+¿Qué método de fpdf añade una nueva página al documento PDF?;<code>pdf.add_page()</code>
+¿Qué método de fpdf se utiliza para establecer la tipografía, estilo y tamaño de fuente?;<code>pdf.set_font("helvetica", size=16, style="B")</code>
+¿Qué representa el parámetro <code>style="B"</code> en <code>pdf.set_font()</code>?;Aplica el estilo en negrita (Bold) al texto.
+¿Qué método de fpdf añade una celda de texto de una sola línea?;<code>pdf.cell(w=190, h=10, text="Texto", align="C")</code>
+¿Qué significa el parámetro <code>align="C"</code> en <code>pdf.cell()</code>?;Alinea el texto al centro dentro de la celda.
+¿Qué hace el método <code>pdf.ln(20)</code> en fpdf?;Realiza un salto de línea vertical de 20 mm.
+¿Qué método de fpdf permite agregar un bloque de texto multilinea con ajuste automático de línea?;<code>pdf.multi_cell(w=180, h=10, text=resumen.strip(), align="J")</code>
+¿Qué significa el parámetro <code>align="J"</code> en <code>pdf.multi_cell()</code>?;Justifica el texto a ambos márgenes.
+¿Cómo se genera una lista de listas con los valores de cada diccionario dentro de una lista llamada inventario?;<code>productos = [list(p.values()) for p in inventario]</code>
+¿Qué función nativa de Python se usa para verificar el tipo de dato de una variable en una condición?;<code>isinstance(variable, tipo)</code>
+¿Qué expresión de formato de cadena en Python redondea un número flotante a 2 decimales agregando el signo peso?;<code>f"${valor:.2f}"</code>
+¿Qué parámetro de <code>pdf.cell()</code> dibuja un borde superior en una celda en lugar de un recuadro completo?;<code>border="T"</code>
+¿Qué clase del módulo <code>io</code> permite crear un buffer binario en memoria RAM que simula un archivo?;<code>io.BytesIO()</code>
+¿Cómo se capturan los bytes generados por un objeto FPDF para guardarlos en memoria?;<code>pdf_bytes = pdf.output()</code>
+¿Cómo se escriben los bytes de un PDF dentro de un buffer <code>io.BytesIO()</code>?;<code>buffer.write(pdf_bytes)</code>
+¿Para qué sirve ejecutar <code>buffer.seek(0)</code> después de escribir datos en un buffer de memoria?;Mueve el cursor de lectura/escritura al inicio del buffer para poder leerlo desde el comienzo.
+¿Qué clase de PyPDF2 se utiliza para leer un archivo o flujo binario PDF?;<code>PdfReader()</code>
+¿Qué clase de PyPDF2 se utiliza para construir y exportar un nuevo archivo PDF?;<code>PdfWriter()</code>
+¿Cómo se extrae la primera página de un objeto <code>PdfReader</code> en PyPDF2?;<code>pagina = reader.pages[0]</code>
+¿Qué método de PyPDF2 superpone o fusiona el contenido de una página sobre otra página?;<code>template_page.merge_page(overlay_page)</code>
+¿Cómo se añade una página procesada a un objeto <code>PdfWriter</code> en PyPDF2?;<code>writer.add_page(pagina)</code>
+¿En qué modo de apertura de archivo debe usarse <code>open()</code> para guardar un PDF generado con PyPDF2?;En modo de escritura binaria (<code>"wb"</code>).
+¿Qué código guarda en disco el contenido de un <code>PdfWriter</code> de PyPDF2?;<code>with open("archivo.pdf", "wb") as f:<br>    writer.write(f)</code>
+¿Por qué debe definirse la lista <code>inventario = []</code> fuera de las funciones en el script principal?;Para que actúe como una estructura global accesible por las funciones de modificación y consulta.
+¿Qué error se produce en Python si se intenta convertir una cadena vacía <code>""</code> con <code>int()</code>?;<code>ValueError: invalid literal for int() with base 10: ''</code>
+¿Qué excepción se lanza cuando PyPDF2 intenta abrir un archivo de plantilla que no existe en el directorio?;<code>FileNotFoundError</code>
