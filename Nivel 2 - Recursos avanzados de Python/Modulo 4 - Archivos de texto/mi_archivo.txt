@@ -1,0 +1,6 @@
+Hola mundo python
+MI no bre es lyffy y aprendo python
+quiero ser el mejor programador
+ 
+ Estoy aprendiedno a manipular archivos txt
+ Escribiendo un archivo txt con with
