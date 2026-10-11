@@ -1,0 +1,16 @@
+¿Qué es un <b>entorno virtual</b> en Python?;Es un entorno aislado diseñado para:<br><ul><li>Gestionar dependencias</li><li>Mantener las bibliotecas independientes por proyecto</li></ul>
+¿Para qué sirve principalmente aislar un proyecto en un <b>entorno virtual</b>?;Para mantener las dependencias <b>separadas</b> y evitar que entren en conflicto con las instalaciones globales del sistema.
+¿Qué problema crítico resuelven los entornos virtuales al trabajar en múltiples proyectos?;Evitan conflictos cuando dos proyectos distintos necesitan <b>versiones diferentes</b> de una misma biblioteca.
+¿Cómo mejora un entorno virtual la <b>reproducibilidad</b> de un proyecto?;Registra las dependencias exactas, facilitando que otros desarrolladores <b>recreen el mismo entorno</b> sin errores.
+¿Qué es <b>Poetry</b> en el ecosistema de Python?;Es una herramienta moderna para la <b>gestión de dependencias</b> que además crea y administra entornos virtuales automáticamente.
+En la terminal de VS Code (PowerShell), ¿qué comando de <b>Poetry</b> inicializa un nuevo proyecto?;<code>poetry init</code>
+¿Qué comando de <b>Poetry</b> se utiliza para añadir e instalar una nueva dependencia en el proyecto?;<code>poetry add nombre_del_paquete</code>
+En PowerShell, ¿qué comando de <b>Poetry</b> activa el entorno virtual e ingresa a su consola aislada?;<code>poetry shell</code>
+Si clonas un repositorio que usa Poetry, ¿qué comando instala todas las dependencias definidas previamente?;<code>poetry install</code>
+¿Qué comando desactiva o sale de un entorno virtual activo iniciado con <code>poetry shell</code>?;<code>exit</code> (o simplemente cerrando la terminal de VS Code).
+Si usas el módulo estándar de Python (venv), ¿qué comando crea un entorno llamado <b>.venv</b> en PowerShell?;<code>python -m venv .venv</code>
+¿Qué comando activa un entorno virtual estándar (<b>.venv</b>) en <b>PowerShell</b>?;<code>.\.venv\Scripts\Activate.ps1</code>
+¿Qué comando desactiva un entorno virtual estándar (venv) activo en la terminal?;<code>deactivate</code>
+¿Para qué sirve el archivo <code>requirements.txt</code> en proyectos tradicionales de Python?;Es un archivo de texto que enumera:<br><ul><li>Las dependencias del proyecto</li><li>Las versiones exactas necesarias para que funcione</li></ul>
+Usando el gestor <b>pip</b>, ¿qué comando instala todas las dependencias listadas en el archivo <code>requirements.txt</code>?;<code>python -m pip install -r requirements.txt</code>
+¿Qué indica la sintaxis <code>paquete==1.2.3</code> al instalar una dependencia?;Que se requiere instalar <b>exactamente</b> la versión <code>1.2.3</code> de dicho paquete.
