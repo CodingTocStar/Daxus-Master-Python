@@ -1,0 +1,11 @@
+{
+    "nombre": "Pedro Pablo",
+    "apellido": "Perez Perez",
+    "contacto": {
+        "correo": "pepep@correo.com",
+        "teléfono": 123456
+    },
+    "cargo": "docente",
+    "tiene_hijos": true,
+    "nombre_hijos": ["Pipe", "Marco", "Julia"]
+}
