@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Pedro Pablo",
+        "apellido": "Perez Perez",
+        "cargo": "docente",
+        "tiene_hijos": true
+    },
+    {
+        "nombre": "Goku",
+        "apellido": "Son",
+        "cargo": "guerrero",
+        "tiene_hijos": true
+    }
+]
