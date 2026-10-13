@@ -1,0 +1,16 @@
+¿Qué es Pandas y para qué se utiliza en Python?;Es una librería diseñada para el análisis y manipulación de datos, orientada específicamente al manejo de información estructurada o tabular.
+¿Cuáles son las dos estructuras de datos fundamentales sobre las que gira Pandas?;<ul><li><code>Series</code></li><li><code>DataFrame</code></li></ul>
+¿Cómo se define una <b>Series</b> en Pandas?;Como un arreglo unidimensional de datos donde cada elemento está asociado a una etiqueta o índice.
+¿Qué representa un <b>DataFrame</b> en Pandas?;Representa una tabla bidimensional con índices asignados tanto a sus filas como a sus columnas (donde cada columna es conceptualmente una <code>Series</code>).
+¿Qué función de Pandas permite instanciar un DataFrame a partir de un archivo de texto delimitado?;La función <code>pd.read_csv()</code>.
+Al utilizar read_csv(), ¿para qué sirve el parámetro <code>header</code>?;Indica la posición de la fila que debe interpretarse como los nombres (cabeceras) de las columnas.
+¿Qué utilidad tiene el parámetro <code>usecols</code> en read_csv()?;Permite cargar únicamente un subconjunto específico de columnas, lo que resulta vital para ahorrar memoria en conjuntos de datos grandes.
+¿Qué función se utiliza para leer datos con formato de notación de objetos de JavaScript en Pandas?;La función <code>pd.read_json()</code>.
+¿Qué método de un DataFrame permite guardar los datos actuales en un archivo separado por comas?;El método <code>to_csv("ruta.csv", index=False)</code>.
+¿Qué retorna la función <code>os.getcwd()</code>?;Una cadena de texto con la ruta absoluta del directorio de trabajo actual.
+¿Qué función devuelve una lista con todos los archivos y carpetas contenidos dentro del directorio actual?;La función <code>os.listdir()</code>.
+En Python, ¿cuál es el patrón utilizado para extraer la extensión de un archivo llamado 'documento.pdf'?;El patrón es dividir la cadena y tomar el último elemento: <code>"documento.pdf".split(".")[-1]</code>
+Al iterar sobre extensiones de archivos, ¿por qué es eficiente almacenarlas en una estructura <code>set()</code>?;Porque un <code>set</code> (conjunto) elimina automáticamente cualquier valor duplicado, dejando únicamente los tipos de archivo únicos.
+¿Qué método del submódulo os.path evalúa si un string corresponde a un directorio existente?;El método <code>os.path.isdir()</code>.
+¿Qué función del módulo os permite reubicar un archivo moviéndolo de una ruta de origen a una de destino?;La función <code>os.rename(origen, destino)</code>.
+¿Por qué se debe ensamblar rutas con <code>os.path.join()</code> al mover archivos en lugar de usar barras (/) manualmente?;Porque <code>join()</code> garantiza que la ruta sea válida y compatible con el sistema operativo en el que se ejecuta el script (Windows, Linux, macOS).
