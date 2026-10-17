@@ -1,0 +1,9 @@
+2026-10-17 13:48:50,873 - ERROR - Division por cero
+2026-10-17 13:48:50,875 - ERROR - No olvides que no se puede dividir por cero! Es una operacion indeterminada...
+
+2026-10-17 13:50:15,333 - INFO - La division entre '45/3.13' es igual a 14.37699680511182
+2026-10-17 13:51:01,414 - DEBUG - No se ingresaron valores enteros.
+2026-10-17 13:51:01,415 - ERROR - Los valores deben ser enteros...
+2026-10-17 13:57:54,069 - DEBUG - No se ingresaron valores enteros.
+2026-10-17 13:57:54,070 - ERROR - Los valores deben ser enteros...
+2026-10-17 13:58:18,835 - INFO - La division entre '45/2' es igual a 22.5
